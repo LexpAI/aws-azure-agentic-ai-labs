@@ -1,0 +1,13 @@
+=== Keyword Completion Goal Lab ===
+
+-- Goal: Stop when observation contains the completion keyword --
+  Step 1: Answer("Working... step 1")
+           -> obs: Working... step 1
+  Step 2: Answer("Working... step 2")
+           -> obs: Working... step 2
+  Step 3: Answer("Working... step 3")
+           -> obs: Working... step 3
+  Step 4: Answer("COMPLETE - completed at step 4")
+           -> obs: COMPLETE - completed at step 4
+  Metrics: total_steps=4 direct_answers=4 tool_calls=0 stop_actions=0
+  Final obs: COMPLETE - completed at step 4 completion_keyword_seen=1 guard_triggered=0

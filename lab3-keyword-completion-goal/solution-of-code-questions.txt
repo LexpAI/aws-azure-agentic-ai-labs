@@ -1,0 +1,27 @@
+Solution code:
+
+/*========== TODO_KEYWORD_GOAL_SOLUTION 1/1 ==========*/
+
+[completion_keyword](const AgentState& state) {
+    return state.observation.find(completion_keyword) != std::string::npos;
+}
+
+/*========== END_OF_TODO_KEYWORD_GOAL_SOLUTION ==========*/
+
+Review question solutions:
+
+Questions:
+1. Which keyword did the policy emit?
+2. Which keyword did the starter goal incorrectly watch?
+3. Why did the starter version reach `max_steps`?
+4. What exact final observation satisfies the fixed goal?
+5. Why does the successful run have four direct answers and zero tool calls?
+6. How does this pattern map to a real queue, job, or deployment workflow?
+
+Solutions:
+1. The policy emitted COMPLETE.
+2. The starter goal incorrectly watched DONE.
+3. The starter reached max_steps because COMPLETE appeared, but the goal was looking for DONE.
+4. COMPLETE -> completed at step 4 satisfies the fixed goal.
+5. The policy emits plain status strings, so every step is a direct answer and no tool call is needed.
+6. A real agent can monitor status text from a job, queue, or deployment system and stop when a trusted completion marker appears.
