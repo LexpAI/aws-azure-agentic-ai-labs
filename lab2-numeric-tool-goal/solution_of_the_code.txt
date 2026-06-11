@@ -1,0 +1,7 @@
+/*========== TODO_ERROR_RATE_BRANCH_SOLUTION 1/1 ==========*/
+
+if (tool_call.name == "get_metric" && tool_call.args == "error_rate") {
+    return "error_rate_pct=2.7";
+}
+
+/*========== END_OF_TODO_ERROR_RATE_BRANCH_SOLUTION 1/1 ==========*/
