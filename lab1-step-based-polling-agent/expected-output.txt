@@ -1,0 +1,11 @@
+=== Step-Based Polling Agent ===
+
+-- Goal: Stop after the configured poll attempt limit --
+  Step 1: Answer("Poll attempt 1")
+           -> obs: Observed: Poll attempt 1
+  Step 2: Answer("Poll attempt 2")
+           -> obs: Observed: Poll attempt 2
+  Step 3: Answer("Poll attempt 3")
+           -> obs: Observed: Poll attempt 3
+  Metrics: total_steps=3 direct_answers=3 tool_calls=0 stop_actions=0
+  Final: steps=3 done=1 attempt_limit_reached=1
