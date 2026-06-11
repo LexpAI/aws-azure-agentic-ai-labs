@@ -1,0 +1,17 @@
+=== Numeric Tool Goal Lab ===
+
+Run A: latency metric
+
+-- Goal: Stop when tool returns numeric data --
+  Step 1: ToolCall(get_metric, "latency")
+           -> obs: latency_ms=42
+  Metrics: total_steps=1 direct_answers=0 tool_calls=1 stop_actions=0
+  Final obs: latency_ms=42 numeric_result_received=1 guard_triggered=0
+
+Run B: error_rate metric
+
+-- Goal: Stop when tool returns numeric data --
+  Step 1: ToolCall(get_metric, "error_rate")
+           -> obs: error_rate_pct=2.7
+  Metrics: total_steps=1 direct_answers=0 tool_calls=1 stop_actions=0
+  Final obs: error_rate_pct=2.7 numeric_result_received=1 guard_triggered=0
