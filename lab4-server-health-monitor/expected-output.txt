@@ -1,0 +1,22 @@
+=== C++ Server Health Monitor ===
+
+Total log entries : 8
+INFO entries      : 4
+WARNING entries   : 2
+ERROR entries     : 2
+Average CPU       : 51.25%
+Highest CPU       : 82% on db-server-03
+
+Incident Summary:
+- Critical signals detected. The system has 2 error event(s).
+- Warning signals detected. The system has 2 warning event(s).
+- Average CPU is within an acceptable range.
+- Server requiring attention: db-server-03 with CPU=82%.
+
+Expected answers:
+
+1. 2 ERROR events were detected.
+2. 2 WARNING events were detected.
+3. db-server-03 had the highest CPU usage.
+4. No. The average CPU was 51.25%.
+5. Because AI agents need structured observations before they can reason, call tools, or generate useful summaries.

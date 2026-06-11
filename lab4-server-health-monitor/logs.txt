@@ -1,0 +1,8 @@
+2026-06-02 08:01:12 | web-server-01 | INFO     | Request processed             | cpu=32
+2026-06-02 08:01:45 | db-server-03  | WARNING  | Slow query 1200ms             | cpu=78
+2026-06-02 08:02:03 | web-server-02 | ERROR    | Connection refused            | cpu=45
+2026-06-02 08:02:30 | ml-server-01  | INFO     | Model inference started       | cpu=41
+2026-06-02 08:02:44 | api-gateway-1 | WARNING  | Spike in 5xx responses        | cpu=67
+2026-06-02 08:03:01 | cache-node-02 | INFO     | Cache warmup completed        | cpu=29
+2026-06-02 08:03:19 | db-server-03  | ERROR    | Replica lag above threshold   | cpu=82
+2026-06-02 08:03:42 | web-server-04 | INFO     | Deployment health check pass  | cpu=36
