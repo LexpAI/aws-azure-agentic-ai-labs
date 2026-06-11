@@ -1,0 +1,8 @@
+## Questions
+
+1. Which keyword did the policy emit?
+2. Which keyword did the starter goal incorrectly watch?
+3. Why did the starter version reach `max_steps`?
+4. What exact final observation satisfies the fixed goal?
+5. Why does the successful run have four direct answers and zero tool calls?
+6. How does this pattern map to a real queue, job, or deployment workflow?
